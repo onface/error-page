@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>404</title>
+  <style>
+    html,body {
+      margin:0;
+      padding:0;
+      line-height: 1;
+    }
+    .error {
+
+    }
+    .error-hd {
+        height:50vh;
+        min-height: 15em;
+        text-align: center;
+    }
+    .error-hd:after {
+        content: '';
+        display: inline-block;
+        vertical-align: bottom;
+        height: 100%;
+        width: 0;
+        margin-left: -1px;
+    }
+    .error-hd-cnt {
+        display:inline-block;
+        vertical-align: bottom;
+        font-size: 15em;
+        text-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+        color: #555;
+    }
+    .error-title {
+        min-height:50vh;
+        background-color:#555;
+        text-align: center;
+    }
+    .error-title-cnt {
+        font-size: 5em;
+        padding-top: 0.3em;
+        padding-bottom: 0.3em;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        color: #eee;
+    }
+    .error-title-btn {
+        font-size: 2em;
+        padding: 0.5em 2em;
+        border: 2px solid #ccc;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 0.2em;
+        display: inline-block;
+        text-decoration: none;
+        color: #eee;
+        cursor: pointer;
+        transition: all 0.2s;
+    }
+    .error-title-btn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #eee;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        box-shadow: 1px 1px 3px 1px rgba(0,0,0,0.3);
+    }
+    @media screen and (max-width: 750px) {
+        .error-hd {
+            min-height: 20vw;
+            height: 40vh;
+        }
+        .error-hd-cnt {
+            font-size: 40vw;
+        }
+        .error-title {
+            min-height:60vh;
+        }
+        .error-title-cnt {
+            font-size: 10vw;
+        }
+        .error-title-btn {
+            font-size: 5vw;
+            margin-top: 5vw;
+        }
+    }
+  </style>
+</head>
+<body>
+
+<div class="error">
+    <div class="error-hd">
+        <div class="error-hd-cnt">404</div>
+    </div>
+    <div class="error-title">
+        <div class="error-title-cnt">Page Not Found</div>
+        <a href="/" class="error-title-btn">Home</a>
+    </div>
+</div>
+
+
+</body>
+</html>
